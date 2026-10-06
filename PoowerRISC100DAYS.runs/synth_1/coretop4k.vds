@@ -1,0 +1,211 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Oct  5 19:52:19 2026
+# Process ID         : 59737
+# Current directory  : /home/fallen_ren/PoowerRISC100DAYS/PoowerRISC100DAYS.runs/synth_1
+# Command line       : vivado -log coretop4k.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source coretop4k.tcl
+# Log file           : /home/fallen_ren/PoowerRISC100DAYS/PoowerRISC100DAYS.runs/synth_1/coretop4k.vds
+# Journal file       : /home/fallen_ren/PoowerRISC100DAYS/PoowerRISC100DAYS.runs/synth_1/vivado.jou
+# Running On         : fortX
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 26.04.1 LTS
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2697 v4 @ 2.30GHz
+# CPU Frequency      : 2294.668 MHz
+# CPU Physical cores : 36
+# CPU Logical cores  : 36
+# Host memory        : 49524 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 58114 MB
+# Available Virtual  : 50829 MB
+#-----------------------------------------------------------
+source coretop4k.tcl -notrace
+Command: synth_design -top coretop4k -part xcku5p-ffvb676-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 59783
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2046.551 ; gain = 429.234 ; free physical = 29911 ; free virtual = 47305
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11067] parameter 'XLEN' declared inside package 'const_pkg' shall be treated as localparam [/home/fallen_ren/PoowerRISC100DAYS/RTL/const_pkg.sv:24]
+INFO: [Synth 8-11241] undeclared symbol 'q_01', assumed default net type 'wire' [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'coretop4k' [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:23]
+INFO: [Synth 8-638] synthesizing module 'register_file' [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/registor_file.vhd:45]
+	Parameter XLEN bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_file' (0#1) [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/registor_file.vhd:45]
+WARNING: [Synth 8-689] width (1) of port connection 'q_o1' does not match port width (64) of module 'register_file' [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:50]
+INFO: [Synth 8-6155] done synthesizing module 'coretop4k' (0#1) [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:23]
+WARNING: [Synth 8-3848] Net we1 in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:28]
+WARNING: [Synth 8-3848] Net we2 in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:28]
+WARNING: [Synth 8-3848] Net we3 in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:28]
+WARNING: [Synth 8-3848] Net we1_addr in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:29]
+WARNING: [Synth 8-3848] Net we2_addr in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:29]
+WARNING: [Synth 8-3848] Net we3_addr in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:29]
+WARNING: [Synth 8-3848] Net d_n1 in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:30]
+WARNING: [Synth 8-3848] Net d_n2 in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:30]
+WARNING: [Synth 8-3848] Net d_n3 in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:30]
+WARNING: [Synth 8-3848] Net rd1_addr in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:32]
+WARNING: [Synth 8-3848] Net rd2_addr in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:32]
+WARNING: [Synth 8-3848] Net rd3_addr in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:32]
+WARNING: [Synth 8-3848] Net rd4_addr in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:32]
+WARNING: [Synth 8-3848] Net rd5_addr in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:32]
+WARNING: [Synth 8-3848] Net rd6_addr in module/entity coretop4k does not have driver. [/home/fallen_ren/PoowerRISC100DAYS/RTL/RISCV/coretop4k.sv:32]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2142.520 ; gain = 525.203 ; free physical = 29802 ; free virtual = 47198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2151.426 ; gain = 534.109 ; free physical = 29832 ; free virtual = 47227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-ffvb676-2-i
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2160.332 ; gain = 543.016 ; free physical = 29830 ; free virtual = 47226
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2168.340 ; gain = 551.023 ; free physical = 29803 ; free virtual = 47208
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 31    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 62    
+	   2 Input    1 Bit        Muxes := 155   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3033.199 ; gain = 1415.883 ; free physical = 29028 ; free virtual = 46468
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3033.199 ; gain = 1415.883 ; free physical = 29028 ; free virtual = 46468
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3033.199 ; gain = 1415.883 ; free physical = 29028 ; free virtual = 46468
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.012 ; gain = 1460.695 ; free physical = 29010 ; free virtual = 46449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.012 ; gain = 1460.695 ; free physical = 29010 ; free virtual = 46449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.012 ; gain = 1460.695 ; free physical = 29010 ; free virtual = 46449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.012 ; gain = 1460.695 ; free physical = 29010 ; free virtual = 46449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.012 ; gain = 1460.695 ; free physical = 29010 ; free virtual = 46449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.012 ; gain = 1460.695 ; free physical = 29010 ; free virtual = 46449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.012 ; gain = 1460.695 ; free physical = 29010 ; free virtual = 46449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.012 ; gain = 1460.695 ; free physical = 29010 ; free virtual = 46449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.020 ; gain = 1460.695 ; free physical = 29010 ; free virtual = 46449
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3080.980 ; gain = 0.000 ; free physical = 28994 ; free virtual = 46434
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3170.387 ; gain = 0.000 ; free physical = 29073 ; free virtual = 46523
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8fa4da38
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 3170.422 ; gain = 1553.105 ; free physical = 29066 ; free virtual = 46517
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2436.036; main = 2357.034; forked = 283.202
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4021.492; main = 3170.391; forked = 988.289
+INFO: [Common 17-1381] The checkpoint '/home/fallen_ren/PoowerRISC100DAYS/PoowerRISC100DAYS.runs/synth_1/coretop4k.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file coretop4k_utilization_synth.rpt -pb coretop4k_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 19:52:56 2026...
